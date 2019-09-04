@@ -42,28 +42,25 @@ public class Test01_2 {
 		}
 	}
 	
-	public static ArrayList<Integer> insertNum(){
+	public static int insertNum(){
 		
 		int n = input();
-		List<Integer> arr = new ArrayList<Integer>();
-		for (int i = 0; i < n; i++) {
+		int[] arr = new int[n];
+		for (int i = 1; i < (n+1); i++) {
 			System.out.println("请输入第"+(i+1)+"个数字：");
-			arr.add(intNum());
-		}
-		System.out.println(arr);
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < (n-i-1); j++) {
-				if ( (arr.get(j)) > (arr.get(j+1)) ) {
-					int temp = arr.get(j);
-				}
-			}
+			arr[i] =  intNum();
 		}
 		
-		return (ArrayList<Integer>) arr;
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		return arr[n];
+		
 	}
 	
 	
 	public static void main(String[] args) {
+		insertNum();
 	}
 
 	
