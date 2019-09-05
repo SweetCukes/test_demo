@@ -20,7 +20,12 @@ public class SortNumUtils {
 		}
 		System.out.println("改变后数组为：");
 		for (int i = 0; i < arrayNumber.length; i++) {
-			System.out.print(arrayNumber[i]+"，");
+			
+			if (i == (arrayNumber.length)) {
+				System.out.print(arrayNumber[i]);
+			}else {
+				System.out.print(arrayNumber[i]+"，");
+			}
 		}
 		return arrayNumber;
 	}

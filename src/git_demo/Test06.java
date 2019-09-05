@@ -9,6 +9,5 @@ public class Test06 {
 		int low = 0;
 		int high = arrayNumber.length;
 		SortNumUtils.sortQuilkNum(low,high,arrayNumber);
-		
 	}
 }
