@@ -18,6 +18,7 @@ public class Test01 {
 	
 	public static void main(String[] args) {
 		int[] arr= {3,4,6,3,7,8,67,6,342,45,454,345,44};
+//		System.out.println(java.util.Arrays.toString(arr));
 		System.out.println("排序前数组为：");
 		for(int num:arr) {
 			System.out.print(num +",");
