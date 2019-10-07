@@ -13,7 +13,9 @@ public class SQLConnection {
 	
 	public Connection connection =  null;
 	public PreparedStatement pst = null;
-	
+	class Sql{
+		Integer sInteger;
+	}
 	public SQLConnection(String sql ) {
 		try {
 			Class.forName(name);	//加载驱动

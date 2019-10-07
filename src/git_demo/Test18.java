@@ -1,6 +1,6 @@
-package git_demo;
 
-import java.util.HashMap;
+
+package git_demo;
 
 public class Test18 extends Thread{
 	
