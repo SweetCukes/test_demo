@@ -1,27 +1,28 @@
 package git_demo;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
+//判断素数
 public class Test04 {
-	public static String name( String[] array ) {
-		return null;
-		
-		
-		
-	}
-	
-	
 	
 	public static void main(String[] args) {
-		List<String> userlist = new ArrayList<String>();  
-		List<String> userlist2 = new LinkedList<String>();
-        userlist.add("李白");  
-        userlist.add("123");  
-        userlist.add("李白李白李");  
-        userlist2.add("杜甫");  
-        userlist2.add("456");  
-        userlist2.add("杜甫杜甫杜");  
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		for (int i = 0; i < 100; i++) {
+			arrayList.add(i);
+			int j = 2;
+			while (i > j) {
+				if (i %j == 0) {
+					break;
+				}
+				j++;
+			}
+			if (i == j) {
+				System.out.println(i);
+			}
+			
+		}
+			
+		
+		
+		//System.out.println(arrayList);
 	}
 }
