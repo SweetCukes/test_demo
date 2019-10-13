@@ -6,7 +6,7 @@ public class Test04 {
 	
 	public static void main(String[] args) {
 		ArrayList<Integer> arrayList = new ArrayList<Integer>();
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1000; i++) {
 			arrayList.add(i);
 			int j = 2;
 			while (i > j) {
